@@ -44,10 +44,12 @@ function isDirector(employee) {
 }
 function executeWork(employee) {
     if (isDirector(employee)) {
-        var director = new Director();
-        return director.workDirectorTasks();
+        var employee_1 = new Director();
+        return employee_1.workDirectorTasks();
     }
-    var teacher = new Teacher();
-    return teacher.workTeacherTasks();
+    else {
+        var employee_2 = new Teacher();
+        return employee_2.workTeacherTasks();
+    }
 }
 console.log(executeWork(createEmployee("200")));

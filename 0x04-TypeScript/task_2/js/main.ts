@@ -61,12 +61,12 @@ export function isDirector(employee: object){
 
 function executeWork(employee: object){
     if(isDirector(employee)){
-        const director = new Director();
-        return director.workDirectorTasks();
+        const employee = new Director();
+        return employee.workDirectorTasks();
+    }else{
+       const employee = new Teacher();
+       return employee.workTeacherTasks(); 
     }
-
-    const teacher = new Teacher();
-    return teacher.workTeacherTasks();
 }
 
 console.log(executeWork(createEmployee("200")));
