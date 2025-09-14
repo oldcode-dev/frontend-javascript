@@ -1,8 +1,8 @@
-/// <reference path="Teacher.ts" />
-/// <reference path="Subject.ts" />
-/// <reference path="Cpp.ts" />
-/// <reference path="Java.ts" />
-/// <reference path="React.ts" />
+/// <reference path="../js/subjects/Teacher.ts" />
+/// <reference path="../js/subjects/Subject.ts" />
+/// <reference path="../js/subjects/Cpp.ts" />
+/// <reference path="../js/subjects/Java.ts" />
+/// <reference path="../js/subjects/React.ts" />
 
 
 export const cpp = new Subjects.Cpp();
