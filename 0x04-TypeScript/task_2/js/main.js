@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isDirector = isDirector;
 var Director = /** @class */ (function () {
     function Director() {
     }
@@ -40,7 +43,7 @@ function isDirector(employee) {
     return false;
 }
 function executeWork(employee) {
-    if (employee === Director) {
+    if (isDirector(employee)) {
         var director = new Director();
         return director.workDirectorTasks();
     }

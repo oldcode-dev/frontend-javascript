@@ -51,7 +51,7 @@ function createEmployee(income: string | number){
 
 
 
-function isDirector(employee: object){
+export function isDirector(employee: object){
     if (employee === Director){
         return true;
     }
@@ -60,7 +60,7 @@ function isDirector(employee: object){
 }
 
 function executeWork(employee: object){
-    if(employee === Director){
+    if(isDirector(employee)){
         const director = new Director();
         return director.workDirectorTasks();
     }
