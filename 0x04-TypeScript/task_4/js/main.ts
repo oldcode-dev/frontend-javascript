@@ -4,13 +4,16 @@
 /// <reference path="../js/subjects/Java.ts" />
 /// <reference path="../js/subjects/React.ts" />
 
+import Teacher = Subjects.Teacher;
+
 const {Cpp, Java, React} = Subjects;
 
 const cpp = new Cpp();
 const java = new Java();
 const react = new React();
 
-const cTeacher: Subjects.Teacher = {
+
+export const cTeacher: Teacher = {
   firstName: "Ernest",
   lastName: "Opoku",
   experienceTeachingC: 10
